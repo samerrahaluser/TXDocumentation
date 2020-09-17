@@ -1,0 +1,5 @@
+1-Go to Payment IHB Forecast Rules and create a payment rule for a specific account
+2-Import payment file having this account in the transactions (telepay, PAIN, etc...) --> check tables paymentimportationfiles and paymentheader
+3-Go to pending statements (forecast transactions)
+Result:
+Forecast transaction for the payment imported should be added

@@ -1,0 +1,2 @@
+1-Go to table syncsettings
+2-set the value LastImportationDate to be yesterday

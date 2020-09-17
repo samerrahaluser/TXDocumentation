@@ -1,0 +1,1 @@
+-Auto Initialize is used to create first time forecast only for the opening balance of the statement. This occurs one time only upon first Bank Statement Importation.

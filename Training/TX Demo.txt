@@ -1,0 +1,93 @@
+Security and Permission
+------------------------
+1-Role
+	Admin: ex User Management
+	Technical: highest level
+	Company Technical: directly under the technical
+	Validator: Used to validate payments
+	Authenticator: Role approval of different pending records (loan, fx deal, TD)
+	First Level Support: User with full access as read only mode
+
+2-Module Permission
+	Role --> Admin
+	Read / Write / Delete / Edit
+
+3-SiteMap Restriction
+	Restricting access to a certain page
+
+4-Salary Restriction
+	Payments Module: Payment of type Salary (SALDOM / SALINT)
+	SALDOM: Salary Domestic payment
+	SALINT: Salary International payment
+
+
+Bank Statements
+---------------
+-Bank Account Number
+-MT940 (Type) --> International
+-BAI2 (Type) --> US Region
+-Importing MT940 --> Bank Transactions
+-It can be imported: Manually - SFTP
+
+
+
+
+Forecasts (pending payment)
+--------------------------
+
+	Unreconciled Forecast --> Forecast
+	Reconciled Forecast --> Actual
+
+	-Loan
+	-Payments (THP / Suppliers)
+	-FX Deals (Buy / Sell currencies)
+	-Time Deposit (Time value of money)
+	-Bonds / Stocks
+	-Manual Forecasts (Editor / Import)
+
+
+Payments + Rules
+----------------
+	LCR160
+	Pain File
+	MT101
+	Telepay
+	AFB
+	etc....
+
+	TO GENERATE A FORECAST for payments YOU NEED to define a rule under (Payment IHB Forecast Rules) --> Header / Detail Level
+													 --> State Called (posted / validated / signed / released / etc....)
+	Types:
+		Manual Import
+		Automatic Import
+		Manul Data Entry
+
+	Ordering Customer (making payment) - Beneficiary (Receiving payment)
+			
+
+
+Reconciliation
+---------------
+	Reconciliation Types:
+
+		1-Reconciliation Rule: Bank Transactions and Forecasts available so that reconciliation is applied
+
+		2-Forecast Auto Generation and Reconciliation Rule: Bank transactions, system automatically creates the forecasts from the bank transcations and reconciles them
+		
+		It occurs once the Bank Statement is imported (last step)
+
+		To view reconciliation go to --> Go to Reconciled Statements
+
+
+
+Reporting
+------------
+	Book Generator
+	Data Exporter
+
+
+
+
+
+
+	

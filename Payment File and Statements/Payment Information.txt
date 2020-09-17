@@ -1,0 +1,10 @@
+Exported File Type:
+----------------------
+If file format selected is FIN then exported file type should be MT101
+If file format selected is URGP / NURG then exported file type should be Pain_001_001_03
+
+
+
+To allow signinig groups for all beneficiaries then make sure AppConfig Key "AllowBeneficiarySG" is false 
+
+pain.002.001.03 --> AckNackFile

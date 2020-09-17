@@ -1,0 +1,5 @@
+1-Create a loan (amount 100,000) with starting date 6 months ago for 1 year
+2-Save the loan
+3-go to cash dashboard and check loans KPI
+Result:
+Passed payments should be removed from loan 

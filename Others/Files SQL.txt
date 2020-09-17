@@ -1,0 +1,50 @@
+Use C2ttest_automation
+Go
+delete from filereftbl
+delete from filereftbldata
+delete from approvallist
+delete from CashPoolingRuleApply
+delete from paymentheader
+delete from paymentimportationfiles
+delete from ledgertransactions
+delete from forecasttransactions
+delete from bankreconciliation
+delete from MT940Data
+delete from MT940Datapending
+delete from paymentuniquefilename
+delete from paymentdetails
+delete from forecasttransactions
+delete from loans
+delete from balancesTable
+delete from bankreconciliation
+delete from manualreconciliation
+delete from forecastautorecrule
+delete from ReconciliationRules
+delete FROM ActualGenerationRule
+delete from dbbankstatement
+delete from timedepositsetup
+delete from timedeposit
+delete from entity where modifiedon > '2020-03-05'
+delete from BU where modifiedon > '2020-03-05'
+delete from forecastfile
+delete from dealtoforecastrule
+delete from paymentihbforecastruleocnumbers
+delete from paymentihbforecastrule
+delete from accounttypes where ModifiedOn >= '2020-03-05'
+delete from TreasuryWireSetup where SetupID >= 146
+delete from fxtrade
+delete FROM irs
+delete from IRSFlows
+delete from IRSSchedule
+DELETE FROM BAI2TransactionDetails
+DELETE from Beneficiary where BeneficiaryNum > 7325
+delete from SalaryRestrictions
+delete from MultiApprovalList
+delete from MultiApprovalSetting
+delete from MultiApprovalListUsers
+delete from MultiApprovalSettingUsers
+delete from currency where ModifiedOn >= '2020-03-08' 
+delete from [dbo].[CorporateBudgetCode] where ModifiedOn >= '2020-03-11'
+delete from [dbo].[CorporateBudgetCodeGroup] where ModifiedOn >= '2020-03-11'
+
+

@@ -1,0 +1,10 @@
+1-Generate Pain001 files
+2-Go to import payments
+3-Import the requested file
+(Check tables paymentheader and paymentdetails)
+4-Go to Manual Bank Statement integration
+5-Import MT940 file
+(check table mt940)
+6-Run auto reconcile from pending statements if the records were not auto reconciled 
+(records will have actualgeneration value in field dealtype in table forecasttransactions if forecast transactions automatically, while records
+reconciled them will have payment rvalue) 

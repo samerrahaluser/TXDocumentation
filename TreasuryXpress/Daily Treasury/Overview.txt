@@ -1,0 +1,8 @@
+Daily treasury represents operations that are done by the Treasurer. 
+
+Reconciliation: Forecast Transactions (manual txn, import txn, payments, deals, FX, time deposit) against Actual Bank Statement
+
+For transactions to be forecast transactions rules have to created including Payment IHB and Deal to Forecast rules
+
+For reconciliation between Forecast Transactions
+

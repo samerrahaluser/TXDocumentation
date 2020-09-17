@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document>
+    <CstmrPmtStsRpt>
+        <GrpHdr>
+            <MsgId>TEST444</MsgId>
+            <CreDtTm>2020-03-01T10:21:01.8726933+02:00</CreDtTm>
+            <InitgPty>
+                <Id>
+                    <OrgId>
+                        <BICOrBEI>BASYSYDA</BICOrBEI>
+                    </OrgId>
+                </Id>
+            </InitgPty>
+        </GrpHdr>
+        <OrgnlGrpInfAndSts>
+            <OrgnlMsgId>TEST444</OrgnlMsgId>
+            <OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+            <GrpSts>RJCT</GrpSts>
+        </OrgnlGrpInfAndSts>
+        <OrgnlPmtInfAndSts>
+            <OrgnlPmtInfId>TEST444</OrgnlPmtInfId>
+            <PmtInfSts>RJCT</PmtInfSts>
+            <TxInfAndSts>
+                <OrgnlInstrId>LXX767</OrgnlInstrId>
+                <OrgnlEndToEndId>LXX767</OrgnlEndToEndId>
+                <TxSts>RJCT</TxSts>
+                <OrgnlTxRef>
+                    <Amt>
+                        <InstdAmt Ccy="USD">281</InstdAmt>
+                    </Amt>
+                    <ReqdExctnDt>2019-09-18</ReqdExctnDt>
+                    <RmtInf>
+                        <Ustrd>LXX1 REMITTANCE-INF-BATCH-3746194</Ustrd>
+                    </RmtInf>
+                </OrgnlTxRef>
+            </TxInfAndSts>
+        </OrgnlPmtInfAndSts>
+    </CstmrPmtStsRpt>
+</Document>

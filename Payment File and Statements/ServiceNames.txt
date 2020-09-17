@@ -1,0 +1,6 @@
+TX Export Service - Dynamic Reports / Book Generator
+TX Task Parallel Service - Bank Statements
+TX C2B Reference Import Parallel Service - Payments
+TX Daily Forecast Sync Service - Forecast Import
+TX AckNack Service - Acknowledge / No Acknowledge payment files
+TX C2B Intra Days Service - Intra Days Integration (ex: MT942)

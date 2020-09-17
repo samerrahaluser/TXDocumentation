@@ -1,0 +1,25 @@
+Files can be integrated in 3 methods:
+1-import txt file
+-----------------
+	a-Security Settings
+	b-Bank Statement Configuration
+	c-Manual bank statement Integration
+	d-Select the txt file and import
+
+2-import CSV file and map columns
+----------------------------------
+	a-Security Settings
+	b-Bank Statement Configuration
+	c-Manual bank statement Integration CSV File
+	d-Select the CSV file
+	e-map the columns as per order in the excel file with screen
+
+3-import file through SFTP
+---------------------------
+	a-Security Settings
+	b-Bank Statement Configuration
+	c-Automatic Bank Statement receipt via SFTP
+	d-Configure your SFTP
+	e-Open filezilla and connect
+	f-place the file in folder SENDTOBANK
+	g-wait for 5 minutes and check imported files page or table (paymentheader)

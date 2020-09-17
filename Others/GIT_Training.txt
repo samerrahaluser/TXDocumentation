@@ -1,0 +1,72 @@
+Git is a SourceControl Software:
+---------------------------------------------------------
+Source control / Version control is a way to track changes on your files over time. It is usually saved in series of snapshots / branches were you have the posibility of moving back and forth.
+
+Git vs Github
+--------------
+Git is the source control Software
+Github is an application allowing you to store remote repositories. You can interact with the repository using Pull / Push system. It allows multiple resources to interact with the repository
+
+Install Git:
+---------------
+1-Go to https://git-scm.com/downloads
+2-Select your OS (Windows)
+3-Wait for the installer to complete
+4-Proceed with installation when download is complete
+5-Select default editor used by Git to be Notepad++
+6-In the selection for Git usage from command line select option "Git from the command line and also 3rd part software"
+7-Select option "Open SSL library"
+
+
+Local Repository Git
+---------------------
+1-Create a folder on your local PC
+2-Then move to the desired folder using Git Bash (example: cd /d/Documentation/MySoftware this moves)
+3-Then send command "Git init" --> this makes the folder as Git Repository (Master)
+
+
+Git Commands:
+-------------
+-To make a directory use git: "git init"
+-To get Git version: "git --version"
+-To move to directory in Git Bash: "cd /d/Documentation/MySoftware this moves" to D:\Documentation\MySoftware
+-To clear info on the bash: "clear"
+-To get status of changes if any: "git status"
+-To add new file to Staging area: "git add File.txt"
+-To add all new files to Staging area: "git add ."
+-To untrack a certain file: "git rm --cached file.txt". To retrack it add it again using "git add File.txt"
+-To commit changes with message: "git commit -m "Initial Commit"" then send Git Status to see that you do not have additional changes
+-To commit only tracked files: "git commit -a -m "Commit tracked files"
+-To get log for commits: "Git log"
+-To login for committing: "git config --global user.email "samer.rahhal@gmail.com" followed by "git config --global user.name "samerrahhaluser""
+-To go back to previous state use the checkout command: "git checkout XXXXXXXXXXXXXXX" replace XXXXX with commit ID
+-To go back to last commit (master) use: "git checkout Master"
+-To go back to previous commit use: "git revert XXXXXXXXXXXXX" replace XXXXXXXXX with the latest coomit ID
+-For first commit it is important to have: git commit -m "initial commit"
+-For aborting reverting back: "git revert --abort"
+
+
+
+
+For more commands check the below:
+https://github.com/joshnh/Git-Commands
+
+
+Repository vs Directory
+------------------------
+Directory holds files at their current state while Repository holds the full timeline of the files.
+
+
+Git Branches
+-----------------
+-Branches can be created for separate development paths without overriding progress
+-Separate different end goals (Dev, Bugs)
+-To create a new branch use: "git branch Dev"
+-To create a new branch and switch to it: "git checkout -b Bugs" 
+-To switch back to the Master branch: "git checkout master"
+-To switch to Bugs branch: "git checkout Bugs"
+-To list all branches: "git branch -a"
+-To delete a branch: "git branch -d Bugs"
+-To merge branch with master:
+	1-Switch to or Checkout to Master branch: "git checkout Master" or "git switch Master"
+	2-Then merge: "git merge XXXXXXXXXX"

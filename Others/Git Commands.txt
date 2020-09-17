@@ -1,0 +1,11 @@
+Download Git (use command line)
+Register to Git to join online
+
+-->git config --global user.name "samerrahaluser"
+-->git config --global user.email "samer.rahhal@gmail.com"
+
+create your Git Folder
+go to the folder using command line d:
+-->git init
+
+

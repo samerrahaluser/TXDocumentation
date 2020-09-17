@@ -1,0 +1,10 @@
+1-Create JUnit Test (no @After and @Before, only use @Test)
+2-Export the test in JAR Format and close Eclipse
+3-Open JMeter and from Test Plan browse and select the JAR File
+4-Add Thread Group
+5-Under Thread Group add BeanShell Sampler (Sampler) and report (listener)
+6-Open the Beanshell and insert the below code
+
+import PackageName.ClassName;
+ClassName obj = new ClassName();
+obj.MethodName();

@@ -1,0 +1,11 @@
+Usually Forecasted files refer to data available in other ERPs ready for importation
+
+1-Open Home
+2-Select Daily Treasury, Editors, Import Forecasts (or search for Import Forecasts from main search menu)
+Note: Make sure Daily Treasury Import Configuration is define (under Security Settings)
+3-Select a file and import it
+4-then go to daily treasury and select "Pending Statements: Step 1"
+5-Filter by accounts --> bank transactions will be displayed and under it the imported forecast transactions are displayed
+6-click run auto reconciliation / reconcile / batch reconcile 
+Result:
+Reconcilded transactions should be removed from both Bank Transactions and Forecasted Transactions

@@ -1,0 +1,13 @@
+1-Create a payment (payment, editor) and save (PENDING POSTING)
+2-Go to approval
+3-Select the payment and approve (APPROVED)
+4-Go to payment workflow, select Workflow
+5-select the payment and sign by all signatories (SIGNED / RELEASED)
+6-To update the status to SENT TO BANK, 
+SQL: update through DB: UPDATE PaymentHeader set FileArchivedOn=GETDATE() where phnum = 277450
+7-To move the status to accepted: 
+SQL: UPDATE PaymentHeader set 
+PaymentStatusReportStatus='ACCEPTED',
+PaymentStatusReceivedDate=getdate() 
+where phnum = 277450
+

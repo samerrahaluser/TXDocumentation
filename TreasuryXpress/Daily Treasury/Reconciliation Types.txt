@@ -1,0 +1,8 @@
+-Reconcile: Reconcile one by one transcaction same amount and same account
+-Create Complementary Reconcile: reconcile with different amounts (different number of transactions)
+-Create corresponding Forecasts: number of transactions should be the same
+-Split: Divide bank statements (no check for forecast transactions)
+-Batch Reconcile: multiple recons (no check for forecast transactions)
+-auto match: based on aacount selected amounts
+-Payment IHB Bank txns only
+

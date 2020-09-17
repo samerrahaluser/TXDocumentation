@@ -1,0 +1,15 @@
+Web.config
+----------
+1-Open Azure Portal
+2-Select the App Service Plan
+3-Under Development Tools select "App Service Editor (Preview)"
+4-Press on Go
+5-Scroll down and select web.config
+
+
+Connection String
+------------------
+1-Open Azure Portal
+2-Select the App Service Plan
+3-Under Settings select "Configuration"
+4-Scroll down and select "DefaultConnectionString"

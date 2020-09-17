@@ -1,0 +1,62 @@
+%matplotlib inline
+import numpy as np
+import pandas as pd
+
+Load CSV File
+----------------
+df = pd.read_csv("PastHires.csv")
+
+Show first 5 rows
+----------------
+df.head()
+
+
+Show All
+---------------
+df.head(len(df))
+
+
+Get number of rows
+-------------------
+len(df)
+
+
+Get first 8 records
+--------------------
+df.head(8)
+
+
+Get last 4 records
+-------------------
+df.tail(4)
+
+
+Get number of columns and rows
+-----------------------------
+df.shape
+
+
+get column names
+--------------------------
+df.columns
+
+
+get values of one column
+------------------------------
+df['ColumnName']
+
+
+get first 5 values of one column
+---------------------------------
+df.['Hired'][:5]
+
+
+get first 5th value of one column
+---------------------------------
+df.['Hired'][5]
+
+
+Sort values (ascending or descending)
+--------------------------------------
+df.sort_values(['ColumnName'],ascending=False)
+df.sort_values(['ColumnName'],ascending=True)

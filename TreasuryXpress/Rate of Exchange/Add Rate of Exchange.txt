@@ -1,0 +1,5 @@
+1-Open the system
+2-Go to Administration / FX Rates
+3-Select the currency needed against the Base Currency
+4-Sepcify the rate and value date
+5-Save

@@ -1,0 +1,73 @@
+Payment --> Direct credit 
+Debtor = ordering customer --> company (TX Lebanon)
+Creditor = Beneficiary/supplier/Vendor/Employee
+
+Types accepted by the banks:
+Cutom format
+PAIN001.001.03 or ISO20022  (XML Based) 
+MT101
+MT103
+WPS (UAE salary file)
+NON-WPS 
+
+Beneficiary/supplier/vendor types:
+1) SUPINT/DOM ==> Supplier 
+2) TREASURYDOM/INT==> inter-company transfer
+3) SALDOM/SALINT --> Salaries
+
+H2H: Host 2 host
+Link the ERP to C2T and link C2T to SWIFT/banks
+1) import forecast/booking entries
+2) import payment data 
+
+Methods:
+1) SFTP
+2) FTPS
+3) API 
+
+PGP encryption
+
+
+TMS to bank(s)
+1) h2h: trhough sftps
+2) SWIFT: BIC Code
+3) APIs (silvergate, Diamonds bank, LHV ,..)
+4) EBICs
+
+Bank/Swift to C2Treasury:
+1) MT940: end of day bank statements + balances 
+	a) balances
+	b) reconciliation 
+2) Bai2: MT940 US banks 
+3) Mt942/Bai2 intra-days : 
+3) CAMG053: like MT940 but XML based4
+4) CMAT052: mt942 but xml 
+5) PAIN02.001.03 : Payment status report  (ACk/NACK)
+
+
+ERP
+1) new payment from TX Lebanon ---> Zara 1000$
+2) Debit 1000$
+3) MT940 -- >1000$ debited
+
+Validation workflow:
+1) Creator: TX as posted 
+2) Validator 
+signer
+releaser 
+
+ERP to TMS
+Payment amount, beneificary IBAN name, address 
+
+
+Corporate Cashflow forecast 
+
+
+Syndicate ==> Facility per bank(s)
+1) OD
+2) ILC 
+2) LG 
+3) loan
+
+
+

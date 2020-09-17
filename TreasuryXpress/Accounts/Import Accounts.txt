@@ -1,0 +1,8 @@
+1-Login to application
+2-Open import accounts
+3-Import a file
+Result
+Error BU already exists
+
+Fix
+Check values of BU in excel file

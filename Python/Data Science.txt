@@ -1,0 +1,40 @@
+-Quantitative Data or Numerical data
+---------------------------------------
+1-Discrete (count of events, whole numbers)
+2-Continuous (infinite number of possibilities, decimal)
+	
+-Categorical Data or Qualitative (ex: gender, race, etc...)
+
+-Ordinal (mixture of categorical and numerical)
+	ex: movie rating (1,2,3,4,5 but they have meaning 1 lowest, 5 highest)
+
+
+-Statistics
+--------------------------------------------
+	-Mean (Average)
+	-Median: Middle value
+		Odd Count: middle value, extracted after sorting
+		Even Count: average of the 2 middle values after sorting
+	-Mode: Most common value in a data set (frequent) --> it needs discrete data
+	-Standard Deviation
+	-Variance: Known as SIGMA SQUARE. How the spread out of data is. Average of the squared 				  differences from the mean
+	ex: Data Set = [1,2,3,4,5,6] --> whole population
+	    Mean = 1+2+3+4+5+6 / 6 = 3.5
+	    Difference from the mean = [-2.5,-1.5,-0.5,0.5,1.5,2.5]
+	    Squared Difference = 6.25+1.5625+0.25+0.25+1.5625+6.25 = 16.125
+	    Mean(Sum of squared difference) = 16.125 / 6 = 2.6875
+	-Standard Deviation = square root of the variance (SIGMA). How many sigmas away from the mean
+				SquareRoot(2.6875) = 1.6393
+
+	ex: in case of sample data extracted from the population (subset)
+	    It is calculated by Sum of Squared Difference / count - 1
+	    in previous case = 16.125 / 5 instead of 6 = 3.225
+	    Known as Sample Variance S2(S Squared)
+	-Probability: chance of occurance
+	-Percentile: Percentage at which others are less than that (ex: 99% of salaries in Lebanon are less than 6000 USD, 1% are more)
+	-Moment: Quantitative measure of the shape of probability density function
+		The first moment is the mean
+		The second moment is the variance
+		3rd Moment is the skew
+		4th is kurtosis, how thick the tail and how sharp the peak
+		

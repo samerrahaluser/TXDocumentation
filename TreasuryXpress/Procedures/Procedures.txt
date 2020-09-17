@@ -1,0 +1,7 @@
+SPCalculateBalances --> Bank balance updates and movement in Dashboard
+
+SPRefreshForcastTransaction '2019-06-19' --> Forecast transactions rates update in Cash Flow Analysis and 
+Daily Treasury Evolution as long as maturity date is not reached
+
+
+RefillingData '2019-01-01','2019-07-01' --> Refill balances data

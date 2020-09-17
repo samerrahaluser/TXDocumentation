@@ -1,0 +1,2 @@
+select * FROM hangfire.state
+select * FROM hangfire.job

@@ -1,0 +1,6 @@
+1-Create a payment with file format ALL
+2-Post the payment
+3-Go to payment workflow and check the payment
+4-Click on button Download File
+Result:
+No file available for download since the file format is all (if not all then xml will be available)

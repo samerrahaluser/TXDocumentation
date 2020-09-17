@@ -1,0 +1,12 @@
+Update bank status to "File Sent to Bank":
+1-Update paymentheader set FileArchivedOn = GetDate
+2-Execute the below procedure
+DECLARE    @return_value int
+EXEC    @return_value = [dbo].[SPUpdateBankStatus]
+        @phnum = 23286
+ 
+
+3-Set in PSR File PHNum, BankCode and Status
+Status:
+-ACCEPTED/ACSP/ACPT/SUCCESS
+-REJECTED/RJCT/ERROR

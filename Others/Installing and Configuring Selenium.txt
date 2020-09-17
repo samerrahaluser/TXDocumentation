@@ -1,0 +1,87 @@
+Java Installation:
+------------------
+1-Before installation go to C:\Program Files and check if Java folder is present. 
+If not proceed with Java installation as per next steps (if Win 32bit then check C:\Program Files (x86))
+2-Go to http://www.oracle.com/technetwork/java/javase/downloads/index.html and download the latest Java JDK (currently Java SE 9.0.4)
+3-Install Java (next, next and confirm)
+
+Configure Java Path in System Variables
+----------------------------------------
+4-Go to its folder on C:\Program Files\Java and open the JDK Folder
+5-Copy the path and go to Advanced System Settings of My Computer
+6-Select Environmental Variables and select to create new one
+7-Name the new variable "JAVA_HOME" and paste the path copied earlier
+8-Go to Java folder again and select the bin folder
+9-Copy its path and go to environmental variables and add this path to a variable called "PATH"
+10-To test Java installation and configuration open command prompt and type the following command "java -version", it should return
+the current Java version (9.0.4)
+
+Eclipse IDE Installation
+-------------------------
+11-Go to https://www.eclipse.org/downloads/eclipse-packages/ and download Eclipse IDE for Java Developers (64bit)
+12-Unzip the downloaded folder and launch Eclipse.exe within it
+
+Create New Eclipse Project
+--------------------------
+Note: A project is a test suite (collection of test cases). Each test case is a java class.
+13-Once Eclipse is launched click on "Work Bench" button
+14-Create new Java Project, next then finish (Test Suite is created)
+15-Expand the project and create new class under the SRC (Test Case is created)
+Note: Enable method "public static main void" and click finish
+
+Selenium JARs Download and Configuration
+----------------------------------------
+16-Go to https://www.seleniumhq.org/download/
+17-Under Selenium Client & WebDriver Language Bindings download the Java version
+18-Once completed, open your Java project properties (right click)
+19-Select Jave Build Path, Libraries Tab (ClassPath) and add external JARs
+20-Add all JARs from selenium downloaded folder (inside and outside the libs folder)
+
+Running Tests in any browser
+------------------------------
+21-Use the driver needed in your script for the selected browser 
+(ex: Google Chrome use ChromeDriver, Microsoft Edge use EdgeDriver, etc...)
+22-Go to https://www.seleniumhq.org/download/ and download the Google Chrome Driver
+23-Then configure your script based on the location of the extracted file
+
+TestNG (Test Cases Management)
+--------------------------------
+24-Go back to Eclipse, Help, Install New Software
+25-Go to Testng.org, select selenium, Installation and follow instructions (http://beust.com/eclipse)
+26-Copy the URL given and paste it in Work With section
+27-Wait till TestNG is shown
+28-Select it and proceed
+29-Finish installation and restart Eclipse IDE
+30-To test if TestNG was installed open Eclipse and select Windows, preferences then search for TestNG
+31-To run tests using TestNG add the annotation @Test and no need to select public static void when creating a new test (Create a Project, Package, Class)
+Note: after each @Test is considered a test case by itself
+Note: Project Example OMTPortal - Package Example Login Module - Class Example Valid_Login - Then add all the tests under the class
+32-Each Class can be considered as set of test cases under a test suite. To execute all batches of test cases under a test suite
+then convert the whole testsuite to XML (Convert to TestNG) and then execute the tests from there.
+Note: the XML file should be on project level and not package level / test suite
+33-To exclude one batch of test cases from execution then remove it from the XML File
+34-To remove a single test under a batch then specify the method under the class, name it then exclude it. Similarly you can
+only include specific tests
+Example:
+  <test thread-count="5" name="Beginners Tests">
+    <classes>
+      <class name="TestCases.SecondTest"/>
+      <class name="TestCases.FirstTest">
+      	<methods>
+      		<include name="SecondTestCase"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+
+35-Naming Convention for tests should start with Method Name. We use Regular Expression in the XML file to exclude or include 
+certain tests that contains a keyword such as <exclude name="Mobile.*">
+36-Use the annotation @BeforeTest as a pre-requisite for the Test block (regardless of its position in the plan)
+37-Use the annotation @AfterTest as the ending test (regardless of its position in the plan)
+
+Listeners
+--------------------------------
+Note:Listerns are used to take an action when something occurs (ex: take a snapshot when an error occurs)
+39-First Create a Listener Class under your project (ex: public class Listeners implements ITestListener)
+40-Then from the XML Controller link the listener to it
+41-

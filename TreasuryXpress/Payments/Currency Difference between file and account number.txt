@@ -1,0 +1,15 @@
+Scenario One
+-------------
+1-Import payment (telepay, pain, etc...) file having transaction 100USD for account ABC 
+Note: ABC is defined in the system as EUR (without having rate of exchange in the system)
+2-Check payment list (transaction amount should be displayed as imported in the file 100 USD)
+3-Check forecast transactions list (transaction should be displayed as 100EUR since no ROE exists)
+
+Scenario Two
+------------
+1-Import payment (telepay, pain, etc...) file having transaction 100USD for account ABC 
+Note: ABC is defined in the system as EUR (having rate of exchange in the system - 1 EUR = 2 USD)
+2-Check payment list (transaction amount should be displayed as imported in the file 100 USD)
+3-Check forecast transactions list (transaction should be displayed as 50EUR since no ROE exists)
+
+
