@@ -1,4 +1,4 @@
-Security and Permission
+Security and Permissions
 ------------------------
 1-Role
 	Admin: ex User Management
