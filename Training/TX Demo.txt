@@ -32,7 +32,7 @@ Bank Statements
 
 
 
-Forecasts (pending payment)
+Forecasts (pending payments)
 --------------------------
 
 	Unreconciled Forecast --> Forecast
